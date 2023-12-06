@@ -1,0 +1,221 @@
+x<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation Effects</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #0c192c;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    perspective: 600px; /* Add perspective for 3D effect */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Wrap bubbles onto multiple lines */
+    align-items: center;
+    justify-content: center;
+}
+
+.bubbles span {
+    position: relative;
+    width: 80px; /* Adjust bubble size as needed */
+    height: 80px; /* Adjust bubble size as needed */
+    background: #4fc3dc;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #4fc3dc,
+        0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #ff2d75,
+        0 0 100px #ff2d75;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0); /* Start from bottom */
+    }
+    100% {
+        transform: translateY(-10vh) scale(1); /* Move to the top */
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #0c192c;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    perspective: 600px; /* Add perspective for 3D effect */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    flex-wrap:reverse; /* Wrap bubbles onto multiple lines */
+    align-items: center;
+    justify-content: center;
+}
+
+.bubbles span {
+    position: relative;
+    width: 80px; /* Adjust bubble size as needed */
+    height: 80px; /* Adjust bubble size as needed */
+    background: #4fc3dc;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #4fc3dc,
+        0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #ff2d75,
+        0 0 100px #ff2d75;
+}
+
+
+/* Add this CSS to your existing styles */
+.center-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px; /* Increase padding for larger button */
+    font-size: 30px; /* Increase font size for larger button */
+    background-color: #008b8b ;
+    color: black;
+    border: 2px solid #000; /* Add black border to the button */
+    font-weight: bold;
+    border: none;
+    border-radius: 80px; /* Increase border radius for a rounder look */
+    cursor: pointer;
+    transition: box-shadow 0.5s ease, background-color 0.5s ease;
+	text-decoration:none;
+}
+
+
+.center-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #48b9d6; /* Change the background color on hover */
+    border-color: #000000; /* Change border color on hover */
+}
+
+/* Rest of your existing CSS code remains unchanged */
+
+/* Media query for desktop devices */
+@media (min-width: 768px) {
+    .center-button {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 40px; /* Increase padding for larger button */
+        font-size: 20px; /* Increase font size for larger button */
+        transition: box-shadow 0.5s ease, background-color 0.5s ease;
+    }
+}
+.center-button:hover {
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+        background-color: #ca1f7b ;
+        border-color: #000000;
+    }
+
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0); /* Start from bottom */
+    }
+    100% {
+        transform: translateY(-9vh) scale(1); /* Move to the top */
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="bubbles">
+    <span style="--i:11;"></span> 
+    <span style="--i:12;"></span> 
+    <span style="--i:24;"></span> 
+    <span style="--i:10;"></span>
+    <span style="--i:14;"></span> 
+    <span style="--i:23;"></span> 
+    <span style="--i:18;"></span> 
+    <span style="--i:16;"></span> 
+    <span style="--i:19;"></span> 
+    <span style="--i:20;"></span> 
+    <span style="--i:22;"></span> 
+    <span style="--i:25;"></span> 
+    <span style="--i:18;"></span> 
+    <span style="--i:21;"></span>
+    <span style="--i:15;"></span>
+    <span style="--i:13;"></span>
+    <span style="--i:26;"></span>
+    <span style="--i:17;"></span>
+    <span style="--i:13;"></span>
+    <span style="--i:28;"></span>
+    <span style="--i:12;"></span> 
+    <span style="--i:24;"></span> 
+    <span style="--i:10;"></span>
+    <span style="--i:14;"></span> 
+    <span style="--i:23;"></span> 
+    <span style="--i:18;"></span> 
+    <span style="--i:16;"></span> 
+    <span style="--i:19;"></span> 
+    <span style="--i:20;"></span> 
+    <span style="--i:22;"></span> 
+    <span style="--i:25;"></span> 
+    <span style="--i:18;"></span> 
+    <span style="--i:21;"></span>
+    <span style="--i:15;"></span>
+    <span style="--i:13;"></span>
+    <span style="--i:26;"></span>
+    <span style="--i:17;"></span>
+    <span style="--i:13;"></span>
+    <span style="--i:28;"></span>
+<button class="center-button"><a href="index.html">Click Me</a></button>
+    </div>
+</body>
+</html>

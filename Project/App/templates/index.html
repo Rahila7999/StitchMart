@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>StitchMart</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="static/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="static/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="static/images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" type="text/css" href="static/https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--  -->
+      <!-- owl stylesheets -->
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+         .translated-ltr{
+         margin-top: -40px;
+         }
+         .translated-ltr{
+         margin-top: -40px;
+         }
+         .goog-te-banner-frame{
+         display:none;
+         margin-top:-20;
+         }
+         .goog-logo-link{
+         display:none !important;
+         }
+         .goog-te-gadget{
+         color:transparent !important;
+         }
+         </style>
+   </head>
+   <body>
+      <!-- banner bg main start -->
+      <div class="banner_bg_main">
+         <!-- header top section start -->
+         <div class="container">
+            <div class="header_section_top">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="custom_menu">
+                        <ul>
+                           <li><a href="#">Best Tailors</a></li>
+                           <li><a href="#">Trending Outfits</a></li>
+                           <li><a href="#">Our Service</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- header top section start -->
+         <!-- logo section start -->
+         <div class="logo_section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="logo"><a href="index.html"><img src="static/images/logo2.png" height="200px" width="200px" style="border-radius: 5%;"></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- logo section end -->
+         <!-- header section start -->
+         <div class="header_section">
+            <div class="container">
+               <div class="containt_main">
+                  <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a href="{% url 'index' %}">Home</a>
+                     <a href="{% url 'men' %}">Men's Clothes</a>
+                     <a href="{% url 'women' %}">Women's Clothes</a>
+                     <a href="{% url 'kids' %}">Child Clothes</a>
+                     <a href="{% url 'team' %}">Team</a>
+                  </div>
+                  <span class="toggle_icon" onclick="openNav()"><img src="static/images/toggle-icon.png"></span>
+                  <div class="dropdown">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                     </div>
+                  </div>
+                  <div class="main">
+                     <!-- Search bar button code -->
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search this blog">
+                        <div class="input-group-append">
+                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                           <i class="fa fa-search"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header_box">
+                     <div class="">
+                   <!--End of Search bar code-->
+                     <!--Translator code-->
+                     <div id="google_translate_element"></div>
+                     <script type="text/javascript">
+                         function googleTranslateElementInit() {
+                             new google.translate.TranslateElement({
+                                 pageLanguage: 'en',  // Change this to your website's default language
+                                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                             }, 'google_translate_element');
+                         }
+                     </script>
+                     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                     <!--End Translator code-->
+                     </div>
+                    <!-- <div-- class="login_menu">
+                        <ul>
+                           <li><a href="#">
+                              <i class="fa fa-shopping-login" aria-hidden="true"></i>
+                              <span class="padding_10">C</span></a>
+                           </li>
+                           <li><a href="#">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <span class="padding_10">Cart</span></a>
+                           </li>
+                        </ul>
+                     </div-->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- header section end -->
+         <!-- banner section start -->
+         <div class="banner_section layout_padding">
+            <div class="container">
+               <div id="my_slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <h1 class="banner_taital">Get clothes tailored<br>  as per your choice</h1>
+                             <!--<div class="buynow_bt"><a href="#">Buy Now</a></div>-->
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <h1 class="banner_taital">Your clothes <br>Your choice</h1>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <h1 class="banner_taital"> <br>Your favorite Design</h1>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- banner bg main end -->
+      <!-- men's section start -->
+      <div class="fashion_section">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <h1 class="fashion_taital">Men's Clothes</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Coat pant</h4>
+                                 <!--<p class="price_text">Price  <span style="color: #262626;">$ 30</span></p>-->
+                                 <img src="static/images/cot.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                 <div class="buy_bt" style="text-align: center;">
+                                     <a href="{% url 'login' %}">Find your Tailor</a>
+                                 </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Sherwani</h4>
+                                 <img src="static/images/serwani.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="">Find you Tailor</a></div>
+                                    <!--<div class="seemore_bt"><a href="#">See More</a></div>-->
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Pant shirt</h4>
+                                 <img src="static/images/pan.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="fashion_taital">Men's Clothes</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Kurta Pajama</h4>
+                                 <img src="static/images/kurta.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Pathani suit</h4>
+                                 <img src="static/images/ptn.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Dhoti kurta</h4>
+                                 <img src="static/images/dhotik.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="fashion_taital">Men's Clothes</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Sadri</h4>
+                                 <img src="static/images/sadri.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Jeans shirt</h4>
+                                 <img src="static/images/jeens.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Indo western</h4>
+                                 <img src="static/images/indow.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+            </a>
+         </div>
+      </div>
+      <!-- men's section end -->
+      <!-- women's section start -->
+      <div class="fashion_section">
+         <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <h1 class="fashion_taital">Women's Clothes</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Lehenga</h4>
+                                 <img src="static/images/lahnga.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Gowns</h4>
+                                 <img src="static/images/gou.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Frocks</h4>
+                                 <img src="static/images/frok.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="fashion_taital">Women's Clothes</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Sadi blouse</h4>
+                                 <img src="static/images/sadi.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Sharara Dress</h4>
+                                 <img src="static/images/sharara.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Plazo kurti</h4>
+                                 <img src="static/images/plazo.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="fashion_taital">Women's Clothes</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Salwar suit</h4>
+                                 <img src="static/images/suit.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Designer kurti</h4>
+                                 <img src="static/images/kutri.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Trousers</h4>
+                                 <img src="static/images/trouser.jpeg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+            </a>
+         </div>
+      </div>
+      <!-- women's section end -->
+      <!-- kids  section start -->
+      <div class="jewellery_section">
+         <div id="jewellery_main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <h1 class="fashion_taital">Child clothes</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">School Uniform</h4>
+                                 <img src="static/images/dress.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Coat pants for boys</h4>
+                                 <img src="static/images/kid1.jpeg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Party wear for girls</h4>
+                                 <img src="static/images/kid2.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="fashion_taital">Child clothes</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Pant shirt for boys</h4>
+                                 <img src="static/images/kid4.jpeg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Lehenga for girls</h4>
+                                 <img src="static/images/kid5.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Frock suit for girls</h4>
+                                 <img src="static/images/kid6.jpeg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="fashion_taital">Child clothes</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Kurta pajama for boys</h4>
+                                 <img src="static/images/kid7.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Sherwani for boys</h4>
+                                 <img src="static/images/kid8.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Salwar suit for girls</h4>
+                                 <img src="static/images/kid9.jpg" width="300" height="400" style="max-width: 100%; height: auto;">
+                                 <div class="btn_main">
+                                    <div class="buy_bt" style="text-align: center;"><a href="#">Find you Tailor</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#jewellery_main_slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#jewellery_main_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+            </a>
+         </div>
+      </div>
+      <!-- kids section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="footer_logo"><a href="index.html"><img src="static/images/logo2.png" height="200px" width="200px" style="border-radius: 5%;"></a></div>
+            <div class="input_bt">
+               <input type="text" class="mail_bt" placeholder="khanrahila799@gmail.com" name="Your Email">
+               <span class="subscribe_bt" id="basic-addon2"><a href="mailto:khanrahila799@gmail.com"><i class="fa fa-envelope"></i>
+               </a></span>            </div>
+            <div class="footer_menu">
+               <ul>
+                  <li><a href="#">Best Tailors</a></li>
+                  <li><a href="#">Trending Outfots</a></li>
+                  <li><a href="#">Our Service</a></li>
+               </ul>
+            </div>
+            <div class="location_main">Help Line  Number : <a href="#">+91 8418081396</a></div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">© 2023 All Rights Reserved. Design by Co Titans</p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="static/js/jquery.min.js"></script>
+      <script src="static/js/popper.min.js"></script>
+      <script src="static/js/bootstrap.bundle.min.js"></script>
+      <script src="static/js/jquery-3.0.0.min.js"></script>
+      <script src="static/js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="static/js/custom.js"></script>
+      <script>
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+      </script>
+   </body>
+</html>

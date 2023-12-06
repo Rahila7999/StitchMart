@@ -1,0 +1,321 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <!-- style css -->
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <!-- Responsive-->
+ <link rel="stylesheet" href="css/responsive.css">
+ <!-- fevicon -->
+ <link rel="icon" href="images/fevicon.png" type="image/gif" />
+ <!-- Scrollbar Custom CSS -->
+ <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+ <!-- Tweaks for older IEs-->
+ <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+ <!-- fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+ <!-- font awesome -->
+ <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--  -->
+ <!-- owl stylesheets -->
+ <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+ <link rel="stylesheet" href="css/owl.carousel.min.css">
+ <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<style>
+		 body {
+            background-image: url('images/back.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    /* trancleter css*/
+    .translated-ltr{
+        margin-top: -40px;
+        }
+        .translated-ltr{
+        margin-top: -40px;
+        }
+        .goog-te-banner-frame{
+        display:none;
+        margin-top:-20;
+        }
+        .goog-logo-link{
+        display:none !important;
+        }
+        .goog-te-gadget{
+        color:transparent !important;
+        }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
+body{
+  background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg');
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #262626;
+  margin: 5% 0;
+  background-image: url('images/back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1200px)
+{
+  .container{
+    max-width: 1140px;
+  }
+}
+.d-flex{
+  display: flex;
+  flex-direction: row;
+  background: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 25px;
+}
+form{
+  flex: 4;
+}
+.Yorder{
+  flex: 2;
+}
+.title{
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #5195A8), color-stop(100, #70EAFF));
+  background: -moz-linear-gradient(top left, #fd7e14 0%, #fd7e14 100%);
+  background: -ms-linear-gradient(top left, #fd7e14 0%, #fd7e14 100%);
+  background: -o-linear-gradient(top left, ca691e 0%, #fd7e14 100%);
+  background: linear-gradient(to bottom right, #fd7e14 0%, #fd7e14 100%);
+  border-radius:5px 5px 0 0 ;
+  padding: 20px;
+  color: #f6f6f6;
+}
+h2{
+  margin: 0;
+  padding-left: 15px; 
+}
+.required{
+  color: red;
+}
+label, table{
+  display: block;
+  margin: 15px;
+}
+label>span{
+  float: left;
+  width: 25%;
+  margin-top: 12px;
+  padding-right: 10px;
+}
+input[type="text"], input[type="tel"], input[type="email"], select
+{
+  width: 70%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dadada;
+  color: #888;
+}
+select{
+  width: 72%;
+  height: 45px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.Yorder{
+  margin-top: 15px;
+  height: 600px;
+  padding: 20px;
+  border: 1px solid #dadada;
+}
+table{
+  margin: 0;
+  padding: 0;
+}
+th{
+  border-bottom: 1px solid #dadada;
+  padding: 10px 0;
+}
+tr>td:nth-child(1){
+  text-align: left;
+  color: #2d2d2a;
+}
+tr>td:nth-child(2){
+  text-align: right;
+  color: #52ad9c;
+}
+td{
+  border-bottom: 1px solid #dadada;
+  padding: 25px 25px 25px 0;
+}
+
+p{
+  display: block;
+  color: #888;
+  margin: 0;
+  padding-left: 25px;
+}
+.Yorder>div{
+  padding: 15px 0; 
+}
+
+button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background: #fd7e14;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+  background: #b67514;
+  box-shadow: 5px 2px 5px 2px rgb(111, 157, 149);
+}
+.title{
+  text-align: center;
+  font-family: arial;
+}
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.form-buttons button, .form-buttons a {
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  background: #fd7e14;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+  <div class="title">
+      <h2 style="font-size: 30px;">Costomer Details</h2>
+  </div>
+  
+<div class="d-flex">
+  <form action="" method="">
+    <label>
+      <span class="fname">Translate in your language</span>
+    <!--Translator code-->
+<div id="google_element"></div>
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+<script>
+function loadGoogleTranslate(){
+	new google.translate.TranslateElement("google_element")
+}
+
+</script>
+<!--End Translator code-->
+    </label>
+
+    <label>
+      <span class="fname">First Name <span class="required">*</span></span>
+      <input type="text" name="fname">
+    </label>
+    <label>
+      <span class="lname">Last Name <span class="required">*</span></span>
+      <input type="text" name="lname">
+    </label>
+    <label>
+      <span>State<span class="required">*</span></span>
+      <select name="selection">
+        <option value="select">Select a country...</option>
+        <option value="AP">Andhra Pradesh</option>
+        <option value="AR">Arunachal Pradesh</option>
+        <option value="AS">Assam</option>
+        <option value="BR">Bihar</option>
+        <option value="CT">Chhattisgarh</option>
+        <option value="GA">Goa</option>
+        <option value="GJ">Gujarat</option>
+        <option value="HR">Haryana</option>
+        <option value="HP">Himachal Pradesh</option>
+        <option value="JH">Jharkhand</option>
+        <option value="KA">Karnataka</option>
+        <option value="KL">Kerala</option>
+        <option value="MP">Madhya Pradesh</option>
+        <option value="MH">Maharashtra</option>
+        <option value="MN">Manipur</option>
+        <option value="ML">Meghalaya</option>
+        <option value="MZ">Mizoram</option>
+        <option value="NL">Nagaland</option>
+        <option value="OD">Odisha</option>
+        <option value="PB">Panjab</option>
+        <option value="RJ">Rajsthan</option>
+        <option value="SK">Sikkim</option>
+        <option value="TN">Tamil Nadu</option>
+        <option value="TG">Telangana</option>
+        <option value="TR">Tripura</option>
+        <option value="UP">Uttar Pradesh</option>
+        <option value="UK">Uttrakhand</option>
+        <option value="WB">West Bengal</option>
+      </select>
+    </label>
+    <label>
+      <span>Street Address <span class="required">*</span></span>
+      <input type="text" name="houseadd" placeholder="House number and street name" required>
+    </label>
+    <label>
+      <span>&nbsp;</span>
+      <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+    </label>
+    <label>
+      <span>Town / City <span class="required">*</span></span>
+      <input type="text" name="city"> 
+    </label>
+    <label>
+      <span>State / County <span class="required">*</span></span>
+      <input type="text" name="city"> 
+    </label>
+    <label>
+      <span>Postcode / ZIP <span class="required">*</span></span>
+      <input type="text" name="city"> 
+    </label>
+    <label>
+      <span>Phone <span class="required">*</span></span>
+      <input type="tel" name="city"> 
+    </label>
+    <label>
+      <span>Email Address <span class="required">*</span></span>
+      <input type="email" name="city"> 
+    </label>
+	 <label for="picture">Upload your Desing Picture</label>
+      <input type="file" id="picture" name="picture" accept="image/*">
+	</label>
+  <div class="form-buttons">
+    <button class="button"><a href="tailors.html">Back</a></button>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</div>
+  </form>
+  
+</body>
+</html>

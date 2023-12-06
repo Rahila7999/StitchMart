@@ -1,0 +1,123 @@
+{% load static%}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Card Hover Effect V3</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  /* Remove background and padding */
+  background: none;
+  padding: 0;
+}
+
+.back-button a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-button a:hover {
+  color: #FF4500;
+}
+
+.back-button i {
+  margin-right: 5px;
+}
+
+  </style>
+</head>
+<body>
+<script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({
+                                    pageLanguage: 'en',  // Change this to your website's default language
+                                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                                }, 'google_translate_element');
+                            }
+                        </script>
+<div class="back-button">
+  <a href="{% url 'index' %}" onclick="history.back();"><i class="fa fa-arrow-circle-o-left" style="font-size:36px"></i></a>
+
+</div>
+
+<section>
+<div class="container">
+  <h1>Meat Our Team</h1>
+    <p>Welcome to our amazing team. Hello, we are ADIT (IBM) students from NSTI(W) Noida. This is our final project of code module 4 (Python Programming and Web Development using Django). We have used the Django framework to create it, and the theme of our project is StitchMart, which is specially designed for tailors. We hope you like it. Thank you! 👍👍👍</p>
+  <div class="box">
+    <div class="imgBox">
+      <img src="{% static 'images/js.jpg' %}" alt="">
+    </div>
+    <div class="content">
+      <h2>jasleenkaur</br>
+        <span><a href="https://jasleen200000001.github.io/creative-cv/">Team Leader</a></span>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100069614780041"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/jass_0k?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jasleen-kaur-5230441b3/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      </h2>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBox">
+      <img src="{% static 'images/rahila.jpg' %}" alt="">
+    </div>
+    <div class="content">
+      <h2>Rahila Khan</br>
+      <span><a href="http://rahila7999.pythonanywhere.com/">Back End Developer</a></span>
+      <div class="social-links">
+          <a href="https://www.facebook.com/rahila.sheikh.16752?mibextid=2JQ9oc "><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/rk.py1991/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/rahila-9b217624b"><i class="fab fa-linkedin"></i></a>
+      </div>
+      </h2>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBox">
+      <img src="{% static 'images/dp1.jpg' %}" alt="">
+    </div>
+    <div class="content">
+      <h2>Imrana Khanam</br>
+        <span><a href="http://imrana1999.pythonanywhere.com/">UI/UX Designer</a></span>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61551489747285&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/i_am_rana_0204/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/imrana-khanam-099b36257"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </h2>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBox">
+      <img src="{% static 'images/partima.png' %}" alt="">
+    </div>
+    <div class="content">
+      <h2>Partima kumari</br>
+        <span><a href="https://partima70.github.io/creative-cv/">Front End Developer</a></span>
+        <div class="social-links">
+            <a href="https://www.instagram.com/sonap_rity/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/partima-kumari-563b9925a"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </h2>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- partial -->
+
+
+</body>
+</html>
